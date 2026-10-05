@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-space-void: #030304;
+  --color-lime-brand: #D4FF00;
+  --color-horizon-warm: #FFF1D0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030304;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 3px;
+  border: 1px solid rgba(212, 255, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4FF00;
+}
+
+/* Subtle Film Grain */
+.bg-grain {
+  background-image: radial-gradient(rgba(212, 255, 0, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Bracket Frame Utility */
+.bracket-frame {
+  position: relative;
+  border: 1px solid rgba(212, 255, 0, 0.25);
+  background: rgba(13, 14, 18, 0.7);
+  backdrop-filter: blur(12px);
+}
+.bracket-frame::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #D4FF00;
+  border-left: 2px solid #D4FF00;
+}
+.bracket-frame::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #D4FF00;
+  border-right: 2px solid #D4FF00;
+}
+
+/* Double Offset Outline Box (from official poster) */
+.poster-bracket-box {
+  position: relative;
+  border: 1.5px solid #D4FF00;
+  background: rgba(10, 10, 10, 0.85);
+  box-shadow: 4px 4px 0px rgba(212, 255, 0, 0.35);
+}
+
+/* Glitch animation */
+.glitch-hover:hover {
+  text-shadow: 2px 0 #D4FF00, -2px 0 #FFF1D0;
+}
+
+/* Prevent unwanted mobile pull-to-refresh during 3D touch interaction */
+canvas {
+  touch-action: none;
+}
+
+/* High-Performance Glassmorphism Panels (100% Typography Contrast & Legibility) */
+.glass-panel {
+  background: rgba(12, 14, 12, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(204, 255, 0, 0.2);
+}
+
+.glass-panel:hover {
+  border-color: rgba(204, 255, 0, 0.45);
+}
+
+.glass-panel-subtle {
+  background: rgba(10, 12, 10, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-panel-active {
+  background: rgba(16, 20, 12, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(204, 255, 0, 0.6);
+  box-shadow: 0 0 30px rgba(204, 255, 0, 0.15);
+}
+
