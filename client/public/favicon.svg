@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- 16px/32px optimized favicon: Sharp high-contrast crossed blades & lightning impact -->
+  <path d="M4 6L7 3L26 22L28 28L22 26L3 7L4 6Z" fill="#FFFFFF" />
+  <path d="M28 6L25 3L6 22L4 28L10 26L29 7L28 6Z" fill="#FFFFFF" />
+  <polygon points="18,2 11,15 17,15 14,30 23,16 17,16" fill="#FF3B30" stroke="#000" stroke-width="1" />
+</svg>

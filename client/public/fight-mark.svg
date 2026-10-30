@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Crossed Blades + Lightning Impact Shard Fight Motif -->
+  <!-- Blade 1: Top-Left to Bottom-Right -->
+  <path d="M7 9L11 5L39 33L41 41L33 39L5 11L7 9Z" fill="currentColor" fill-opacity="0.9" />
+  <path d="M11 5L15 9L37 31L41 41L39 33L11 5Z" fill="currentColor" />
+  
+  <!-- Blade 2: Top-Right to Bottom-Left -->
+  <path d="M41 9L37 5L9 33L7 41L15 39L43 11L41 9Z" fill="currentColor" fill-opacity="0.9" />
+  <path d="M37 5L33 9L11 31L7 41L9 33L37 5Z" fill="currentColor" />
+  
+  <!-- Central Lightning Shard / Impact Core -->
+  <polygon points="26,3 18,22 25,22 22,45 32,24 25,24" fill="#FF3B30" stroke="#000" stroke-width="1.5" stroke-linejoin="round" />
+</svg>

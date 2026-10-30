@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-arena: #0A0D0B;
+  --surface-arena: #111613;
+  --card-arena: #161D18;
+  --border-arena: #232F26;
+  --accent-signal: #10B981;
+  --text-bright: #F4F5F4;
+  --text-muted: #9CA3AF;
+}
+
+html.light {
+  --bg-arena: #F7F8F7;
+  --surface-arena: #FFFFFF;
+  --card-arena: #F0F2F0;
+  --border-arena: #D8DDD9;
+  --accent-signal: #059669;
+  --text-bright: #141715;
+  --text-muted: #5F6661;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-arena);
+    color: var(--text-bright);
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Force tabular numerals for all scores, timers, and metrics */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Restrained, steady green caret with zero layout shift */
+.typing-caret {
+  display: inline-block;
+  width: 2.5px;
+  height: 1.35em;
+  background-color: #10B981;
+  vertical-align: -0.22em;
+  margin-left: -1.25px;
+  margin-right: -1.25px;
+  animation: steadyBlink 1s infinite ease-in-out;
+}
+
+/* Monospace typing area */
+.typing-canvas {
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-feature-settings: 'liga' 0;
+  letter-spacing: -0.015em;
+  line-height: 1.85;
+  user-select: none;
+}
+
+/* Clean score podium */
+.scoreboard-podium {
+  background: linear-gradient(180deg, #161D18 0%, #111613 100%);
+  border: 1px solid #232F26;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0D0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #232F26;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2E3F33;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "codemeet-typing",
+  "version": "1.0.0",
+  "description": "Production-ready real-time typing competition platform for Code Meet 2026",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,green\" \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "npm --prefix client run build",
+    "build:server": "npm --prefix server run build",
+    "build": "npm run build:client && npm run build:server",
+    "start": "npm --prefix server start",
+    "test": "npm --prefix server test",
+    "load-test": "npm --prefix server run load-test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "puppeteer-core": "^25.16.0",
+    "socket.io-client": "^4.8.4"
+  }
+}

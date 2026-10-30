@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 48" fill="none">
+  <!-- Fight Mark Icon -->
+  <g transform="translate(4, 2) scale(0.9)">
+    <path d="M7 9L11 5L39 33L41 41L33 39L5 11L7 9Z" fill="#FFFFFF" />
+    <path d="M41 9L37 5L9 33L7 41L15 39L43 11L41 9Z" fill="#FFFFFF" />
+    <polygon points="26,3 18,22 25,22 22,45 32,24 25,24" fill="#FF3B30" stroke="#000" stroke-width="1.5" />
+  </g>
+  <!-- Wordmark Typography -->
+  <text x="56" y="26" font-family="'Space Grotesk', 'Arial Black', sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">
+    CODE MEET <tspan fill="#FF3B30">2026</tspan>
+  </text>
+  <text x="56" y="39" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#8E968F" letter-spacing="2">
+    SPEED TYPER CHAMPIONSHIP
+  </text>
+</svg>
